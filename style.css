@@ -1,3 +1,9 @@
+/* Deaclare Variable */
+:root {
+    --font-family: sans-serif;
+    --font-color: #333;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -30,7 +36,76 @@ img{
     display: block;
     text-align: center;
     color: #30A394;
-    font-family: sans-serif;
+    font-family: var(--font-family);
     font-weight: bold;
     padding: 1rem 0;
 }
+
+.title{
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--font-color);
+}
+
+/* Basic Design */
+.title.m{
+    margin: 0.8rem 0;
+}
+.title.mrt{
+    margin-top: 1.8rem;
+}
+.title.mrb{
+    margin-bottom: 1.8rem;
+}
+
+
+/* Input Design */
+.form-group{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 1rem 0;
+}
+.form-group label{
+    font-size: 15px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    padding-right: 0.7rem;
+    color: var(--font-color);
+}
+.form-group input {
+    background-color: #DFDFDF;
+    padding: 0.5rem 0.7rem;
+    font-size: 15px;
+    border: none;
+    width: 270px;
+    margin-right: 3rem;
+    font-family: var(--font-family);
+    font-weight: 600;
+    border-radius: 2px;
+    color: #444;
+}
+
+/* Save Section */
+.save-inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.save-inputs input{
+    width: 8rem;
+    margin-right: 0rem;
+}
+.save-inputs .parsent{
+    font-family: var(--font-family);
+    color: var(--font-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 1.4rem;
+}
+
+/* Button Design */
